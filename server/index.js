@@ -1,10 +1,11 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import { Pool } from "pg";
+import pg from "pg";
 import redis from "redis";
-import { KEYS } from "./keys";
+import { KEYS } from "./keys.js";
 
+const { Pool } = pg;
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());

@@ -1,9 +1,9 @@
 import redis from "redis";
-import { KEYS } from "./keys";
+import { KEYS } from "./keys.js";
 
 const redisClient = redis.createClient({
-  host: keys.redisHost,
-  port: keys.redisPort,
+  host: KEYS.redisHost,
+  port: KEYS.redisPort,
   retry_strategy: () => 1000,
 });
 const subscription = redisClient.duplicate();
