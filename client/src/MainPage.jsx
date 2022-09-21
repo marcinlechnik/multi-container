@@ -45,6 +45,7 @@ export const MainPage = () => {
       </form>
       <h3>Indexes I have seen:</h3>
       {seenIndexes.map(({ number }) => (
+        // TODO set unique key
         <span>{number}, </span>
       ))}
       <h3>Calculated values</h3>
