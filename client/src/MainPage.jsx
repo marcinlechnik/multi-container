@@ -33,7 +33,7 @@ export const MainPage = () => {
   useEffect(() => {
     fetchValues();
     fetchIndexes();
-  }, [fetchIndexes, fetchValues, index]);
+  }, [fetchIndexes, fetchValues]);
 
   return (
     <div>
